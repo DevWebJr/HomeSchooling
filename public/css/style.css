@@ -24,17 +24,88 @@ body{
     padding: 0;
     background-color: white;
     width:100%;
+    color: rgb(46, 41, 58);
 }
 
+a{
+  text-decoration: none;
+  color: rgb(163, 154, 137);
+}
 
+.effect:hover{
+  color: rgb(47, 243, 106);
+}
   /*********************************************/
  /******************* | Body | ****************/
 /*********************************************/
 section{
-  margin: 1vw;
-  padding: 1.5vw;
+  margin: 6vw 0 6vw 0;
+  padding: 0;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 6vw;
+  padding: 2vw;
+  height: auto;
+  width: 80vw;
+  background-color: rgb(147, 233, 236);
+  border: solid 3px grey;
+  border-radius: 15px;
+}
+
+.block{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6vw 0 6vw 0;
+  padding: 0;
+  min-width: 100%;
+  max-width: 100%;
+  background-color: rgb(229, 231, 214);
+}
+
+.show_elements{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 1vw;
+  padding: 1vw;
+}
+
+.element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 1vw;
+  padding: 1vw;
+}
+
+.show_one_element{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 1vw;
+  padding: 1vw;
+}
+
+#boy{
+  color: rgb(12, 145, 235);
+}
+#girl{
+  color: rgb(206, 128, 209);
+}
   /***********************************************/
  /******************* | Footer | ****************/
 /***********************************************/
