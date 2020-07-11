@@ -9,7 +9,7 @@
 html {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: rgb(241, 241, 238);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,25 +22,56 @@ html {
 body{
     margin: 0;
     padding: 0;
-    background-color: white;
     width:100%;
+    height: 100%;
     color: rgb(46, 41, 58);
+    background-color: rgb(241, 241, 238);
 }
 
 a{
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   color: rgb(163, 154, 137);
 }
 
 .effect:hover{
-  color: rgb(47, 243, 106);
+  color: #BEBEBE;
+}
+
+.vertical-space{
+  height: 1.5vw;
+}
+
+.horizontal-space{
+  width: 1.5vw;
 }
   /*********************************************/
  /******************* | Body | ****************/
 /*********************************************/
-section{
-  margin: 6vw 0 6vw 0;
+
+header{
+  margin: 0 0 3vw 0;
+}
+
+#page{
+  margin: 2vw 0 2vw 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+#bigTitle{
+  padding: 0;
+  margin: 1vw;
+  font-size: 5em;
+  color: rgb(163, 154, 137);
+  text-align: center;
+  text-shadow: 10px 5px 5px rgb(216, 197, 197);
 }
 
 .container{
@@ -49,26 +80,39 @@ section{
   align-items: center;
   align-content: center;
   text-align: center;
-  margin: 6vw;
+  margin: 2vw;
   padding: 2vw;
   height: auto;
-  width: 80vw;
-  background-color: rgb(147, 233, 236);
-  border: solid 3px grey;
+  width: 66%;
+  background-color:grey; 
   border-radius: 15px;
+  box-shadow: 10px 5px 5px rgb(216, 197, 197);
 }
 
 .block{
   display: flex;
   flex-wrap: wrap;
-  margin: 6vw 0 6vw 0;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
+  margin: 2vw 0 2vw 0;
   padding: 0;
-  min-width: 100%;
-  max-width: 100%;
-  background-color: rgb(229, 231, 214);
+  height: auto;
+  width: 66%;
+}
+
+.center-link{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  align-content: center;
 }
 
 .show_elements{
+  min-width: 13vw;
+  max-width: 13vw;
+  min-height:9vw;
+  max-height:9vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,6 +121,8 @@ section{
   text-align: center;
   margin: 1vw;
   padding: 1vw;
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px rgb(216, 197, 197);
 }
 
 .element{
@@ -90,6 +136,10 @@ section{
 }
 
 .show_one_element{
+  min-width: 20vw;
+  max-width: 20vw;
+  min-height:auto;
+  max-height:auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,14 +148,35 @@ section{
   text-align: center;
   margin: 1vw;
   padding: 1vw;
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px rgb(216, 197, 197);
 }
 
 #boy{
   color: rgb(12, 145, 235);
+  border: solid 2.5px rgb(12, 145, 235);
+  background-color: #fff;
 }
+
 #girl{
   color: rgb(206, 128, 209);
+  border: solid 2.5px rgb(206, 128, 209);
+  background-color: #fff;
 }
+
+
+#boy:hover{
+  color: #fff;
+  border: display;
+  background-color:  rgb(12, 145, 235);
+}
+
+#girl:hover{
+  color: #fff;
+  border: display;
+  background-color: rgb(206, 128, 209);
+}
+
   /***********************************************/
  /******************* | Footer | ****************/
 /***********************************************/
@@ -115,8 +186,8 @@ footer{
   align-items: center;
   align-content: center;
   text-align: center;
-  margin: 1vw;
+  margin: 3vw 0 0 0;
   padding: 1vw;
-  color: brown;
+  color: #BEBEBE;
   font-weight: bolder;
 }

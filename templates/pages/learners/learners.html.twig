@@ -6,13 +6,11 @@
 {% block body %}
 <div class="block">
     {% for learner in learners %}
+    <a href="{{path('show_one_learner',{'id' : learner.id})}}">
         <div class="show_elements" {% if learner.gender %}id="boy"{% else %}id="girl"{% endif %}>
             <div class="element">{{learner.firstname}}</div>
-            <div class="element">{{learner.lastName}}</div>
-            <div class="element">{% if learner.gender %}Garçon{% else %}Fille{% endif %}</div>
-            <div class="element">{{learner.level.grade}} | {{learner.level.schoolClass}}</div>
-            <div class="element"><a class="effect" href="{{path('show_one_learner',{'id' : learner.id})}}">voir la fiche personnelle</a></div>
         </div>
+    </a>
         {% endfor %}
 </div>
 {% endblock %}

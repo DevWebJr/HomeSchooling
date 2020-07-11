@@ -12,7 +12,11 @@
     </head>
     <body>
         {% include "header.html.twig" %}
-        {% block body %}{% endblock %}
+        <div id="page">
+            {% block body %}
+                {% block bigTitle %}HomeSchooling{% endblock %}
+            {% endblock %}
+        </div>
         {% include "footer.html.twig" %}
         {% block javascripts %}
         <script src="../js/menu_hamburger.js"></script>
