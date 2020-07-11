@@ -1,0 +1,51 @@
+    /***********************************************************/
+   /***********************************************************/
+  /******************* | Feuilles De Style  | ****************/
+ /***********************************************************/
+/***********************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width:100%;
+    font-family: 'Galada', cursive, Arial, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width:100%;
+}
+
+
+  /*********************************************/
+ /******************* | Body | ****************/
+/*********************************************/
+section{
+  margin: 1vw;
+  padding: 1.5vw;
+}
+
+  /***********************************************/
+ /******************* | Footer | ****************/
+/***********************************************/
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin: 1vw;
+  padding: 1vw;
+  color: brown;
+  font-weight: bolder;
+}
