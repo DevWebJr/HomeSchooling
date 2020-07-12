@@ -5,8 +5,13 @@
 
 {% block body %}
 <div class="block">
-    {{ form_start(form) }}
-    {{ form_row(form) }}
-    {{ form_end(form) }}
+    <form>
+        {{ form_start(form) }}
+        {{ form_row(form.firstName) }}
+        {{ form_row(form.lastName) }}
+        {{ form_row(form.gender) }}
+        <button type="submit">Valider</button>
+        {{ form_end(form) }}
+    </form>
 </div>
 {% endblock %}

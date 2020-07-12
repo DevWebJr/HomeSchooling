@@ -72,6 +72,7 @@
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">App_KernelDevDebugContainer</parameter>
+    <parameter key="locale">fr</parameter>
     <parameter key="event_dispatcher.event_aliases" type="collection">
       <parameter key="Symfony\Component\Console\Event\ConsoleCommandEvent">console.command</parameter>
       <parameter key="Symfony\Component\Console\Event\ConsoleErrorEvent">console.error</parameter>
@@ -1626,6 +1627,7 @@
             <argument>C:\Users\devwe\OneDrive\Documents\LocalServer\HomeSchooling\vendor\symfony\validator/Resources/translations\validators.fr.xlf</argument>
             <argument>C:\Users\devwe\OneDrive\Documents\LocalServer\HomeSchooling\vendor\symfony\form/Resources/translations\validators.fr.xlf</argument>
             <argument>C:\Users\devwe\OneDrive\Documents\LocalServer\HomeSchooling\vendor\symfony\security-core/Resources/translations\security.fr.xlf</argument>
+            <argument>C:\Users\devwe\OneDrive\Documents\LocalServer\HomeSchooling/translations\forms.fr.yaml</argument>
           </argument>
           <argument key="gl" type="collection">
             <argument>C:\Users\devwe\OneDrive\Documents\LocalServer\HomeSchooling\vendor\symfony\validator/Resources/translations\validators.gl.xlf</argument>
