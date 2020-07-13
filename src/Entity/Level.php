@@ -39,6 +39,11 @@ class Level
         $this->learners = new ArrayCollection();
     }
 
+    public function __toString(): string
+    {
+        return $this->grade.' | '.$this->schoolClass;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

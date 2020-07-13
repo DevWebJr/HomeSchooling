@@ -50,6 +50,11 @@ class Learner
         $this->teacher = new ArrayCollection();
     }
 
+    public function __toString(): string
+    {
+        return $this->lastName. ' | '.$this->firstName;
+    }
+
     public function getId(): ?int
     {
         return $this->id;

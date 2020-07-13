@@ -54,6 +54,19 @@ class Teacher
         $this->learners = new ArrayCollection();
     }
 
+    public function __toString(): string
+    {
+        if($this->gender)
+        {
+            return 'Mr '.$this->lastName. ' | '.$this->firstName;
+        }
+        else
+        {
+            return 'Mme '.$this->lastName. ' | '.$this->firstName;
+        }
+    }
+
+
     public function getId(): ?int
     {
         return $this->id;
