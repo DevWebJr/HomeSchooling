@@ -48,6 +48,11 @@ class __TwigTemplate_d88a2453881b240e35f43f360b61063332d0fea6aaa788fbf6fb1987960
         echo "
         &middot; <a href=\"mailto:devwebjr@gmail.com\" class=\"text-info\"  title=\"Contactez moi\">DevWebJr</a>
     </p>
+    <div class=\"customized\">
+        <div class=\"line\">
+            Hello
+        </div>
+    </div>
 </footer>";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -79,6 +84,11 @@ class __TwigTemplate_d88a2453881b240e35f43f360b61063332d0fea6aaa788fbf6fb1987960
         &copy; Copyright {{'now' |date('Y')}}
         &middot; <a href=\"mailto:devwebjr@gmail.com\" class=\"text-info\"  title=\"Contactez moi\">DevWebJr</a>
     </p>
+    <div class=\"customized\">
+        <div class=\"line\">
+            Hello
+        </div>
+    </div>
 </footer>", "footer.html.twig", "C:\\Users\\devwe\\OneDrive\\Documents\\LocalServer\\HomeSchooling\\templates\\footer.html.twig");
     }
 }

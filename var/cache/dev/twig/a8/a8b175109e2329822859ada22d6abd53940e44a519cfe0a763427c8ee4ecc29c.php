@@ -54,29 +54,30 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         // line 6
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
+        <link rel=\"stylesheet\" href=\"../css/style.css\">
         ";
-        // line 7
+        // line 8
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 12
+        // line 10
         echo "    </head>
     <body>
         ";
-        // line 14
-        $this->loadTemplate("header.html.twig", "base.html.twig", 14)->display($context);
-        // line 15
+        // line 12
+        $this->loadTemplate("header.html.twig", "base.html.twig", 12)->display($context);
+        // line 13
         echo "        <div id=\"page\">
             ";
-        // line 16
+        // line 14
         $this->displayBlock('body', $context, $blocks);
-        // line 19
+        // line 17
         echo "        </div>
         ";
-        // line 20
-        $this->loadTemplate("footer.html.twig", "base.html.twig", 20)->display($context);
-        // line 21
+        // line 18
+        $this->loadTemplate("footer.html.twig", "base.html.twig", 18)->display($context);
+        // line 19
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 25
+        // line 22
         echo "    </body>
 </html>
 ";
@@ -107,7 +108,7 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
 
     }
 
-    // line 7
+    // line 8
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -117,11 +118,8 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 8
-        echo "        <link rel=\"stylesheet\" href=\"../css/menu_hamburger.css\">
-        <link rel=\"stylesheet\" href=\"../css/style.css\">
-
-        ";
+        // line 9
+        echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -130,7 +128,7 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
 
     }
 
-    // line 16
+    // line 14
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -140,10 +138,10 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 17
+        // line 15
         echo "                ";
         $this->displayBlock('bigTitle', $context, $blocks);
-        // line 18
+        // line 16
         echo "            ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -153,7 +151,7 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
 
     }
 
-    // line 17
+    // line 15
     public function block_bigTitle($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -172,7 +170,7 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
 
     }
 
-    // line 21
+    // line 19
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -182,9 +180,8 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 22
-        echo "        <script src=\"../js/menu_hamburger.js\"></script>
-        <script src=\"../js/script.js\"></script>    
+        // line 20
+        echo "        <script src=\"../js/script.js\"></script>    
         ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -206,7 +203,7 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
 
     public function getDebugInfo()
     {
-        return array (  186 => 22,  176 => 21,  157 => 17,  147 => 18,  144 => 17,  134 => 16,  121 => 8,  111 => 7,  92 => 6,  80 => 25,  77 => 21,  75 => 20,  72 => 19,  70 => 16,  67 => 15,  65 => 14,  61 => 12,  59 => 7,  55 => 6,  48 => 1,);
+        return array (  184 => 20,  174 => 19,  155 => 15,  145 => 16,  142 => 15,  132 => 14,  122 => 9,  112 => 8,  93 => 6,  81 => 22,  78 => 19,  76 => 18,  73 => 17,  71 => 14,  68 => 13,  66 => 12,  62 => 10,  60 => 8,  55 => 6,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -217,10 +214,8 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         <meta charset=\"UTF-8\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <title>{% block title %}HomeSchooling{% endblock %}</title>
-        {% block stylesheets %}
-        <link rel=\"stylesheet\" href=\"../css/menu_hamburger.css\">
         <link rel=\"stylesheet\" href=\"../css/style.css\">
-
+        {% block stylesheets %}
         {% endblock %}
     </head>
     <body>
@@ -232,7 +227,6 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         </div>
         {% include \"footer.html.twig\" %}
         {% block javascripts %}
-        <script src=\"../js/menu_hamburger.js\"></script>
         <script src=\"../js/script.js\"></script>    
         {% endblock %}
     </body>

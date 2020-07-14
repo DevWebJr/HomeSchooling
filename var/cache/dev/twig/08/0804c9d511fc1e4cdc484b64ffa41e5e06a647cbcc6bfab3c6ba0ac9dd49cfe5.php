@@ -88,7 +88,7 @@ class __TwigTemplate_73bf0a548f07f25ac40dc2569b9637505c34c046498aca3de640b7d7303
         echo "<div class=\"center-link\">
     <a class=\"effect\" href=\"";
         // line 8
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("create_learner");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("learner_new");
         echo "\">Ajouter un apprenant</a>
 </div>
 <div class=\"vertical-space\"></div>
@@ -156,7 +156,7 @@ class __TwigTemplate_73bf0a548f07f25ac40dc2569b9637505c34c046498aca3de640b7d7303
 
 {% block body %}
 <div class=\"center-link\">
-    <a class=\"effect\" href=\"{{path('create_learner')}}\">Ajouter un apprenant</a>
+    <a class=\"effect\" href=\"{{path('learner_new')}}\">Ajouter un apprenant</a>
 </div>
 <div class=\"vertical-space\"></div>
 <div class=\"block\">
