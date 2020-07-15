@@ -85,75 +85,44 @@ class __TwigTemplate_ce5bb5802099d7708c5d3b82a677284d66ac1a08dddc74b009cb79fb65a
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Learner index</h1>
-
-    <table class=\"table\">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>FirstName</th>
-                <th>LastName</th>
-                <th>Gender</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
+        echo "    <div class=\"center-link\">
+        <a class=\"effect\" href=\"";
+        // line 7
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("learner_new");
+        echo "\">Ajouter un apprenant</a>
+    </div>
+    <div class=\"vertical-space\"></div>
+    <div class=\"block\">
         ";
-        // line 19
+        // line 11
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["learners"]) || array_key_exists("learners", $context) ? $context["learners"] : (function () { throw new RuntimeError('Variable "learners" does not exist.', 19, $this->source); })()));
-        $context['_iterated'] = false;
+        $context['_seq'] = twig_ensure_traversable((isset($context["learners"]) || array_key_exists("learners", $context) ? $context["learners"] : (function () { throw new RuntimeError('Variable "learners" does not exist.', 11, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["learner"]) {
-            // line 20
-            echo "            <tr>
-                <td>";
-            // line 21
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["learner"], "id", [], "any", false, false, false, 21), "html", null, true);
-            echo "</td>
-                <td>";
-            // line 22
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["learner"], "firstName", [], "any", false, false, false, 22), "html", null, true);
-            echo "</td>
-                <td>";
-            // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["learner"], "lastName", [], "any", false, false, false, 23), "html", null, true);
-            echo "</td>
-                <td>";
-            // line 24
-            echo ((twig_get_attribute($this->env, $this->source, $context["learner"], "gender", [], "any", false, false, false, 24)) ? ("Yes") : ("No"));
-            echo "</td>
-                <td>
-                    <a href=\"";
-            // line 26
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("learner_show", ["id" => twig_get_attribute($this->env, $this->source, $context["learner"], "id", [], "any", false, false, false, 26)]), "html", null, true);
-            echo "\">show</a>
-                    <a href=\"";
-            // line 27
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("learner_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["learner"], "id", [], "any", false, false, false, 27)]), "html", null, true);
-            echo "\">edit</a>
-                </td>
-            </tr>
-        ";
-            $context['_iterated'] = true;
-        }
-        if (!$context['_iterated']) {
-            // line 31
-            echo "            <tr>
-                <td colspan=\"5\">no records found</td>
-            </tr>
-        ";
+            // line 12
+            echo "        <a href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("learner_show", ["id" => twig_get_attribute($this->env, $this->source, $context["learner"], "id", [], "any", false, false, false, 12)]), "html", null, true);
+            echo "\">
+            <div class=\"show_elements\" ";
+            // line 13
+            if (twig_get_attribute($this->env, $this->source, $context["learner"], "gender", [], "any", false, false, false, 13)) {
+                echo "id=\"boy\"";
+            } else {
+                echo "id=\"girl\"";
+            }
+            echo ">
+                <div class=\"element\">";
+            // line 14
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["learner"], "firstname", [], "any", false, false, false, 14), "html", null, true);
+            echo "</div>
+            </div>
+        </a>
+            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['learner'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 35
-        echo "        </tbody>
-    </table>
-
-    <a href=\"";
-        // line 38
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("learner_new");
-        echo "\">Create new</a>
+        // line 18
+        echo "    </div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -175,7 +144,7 @@ class __TwigTemplate_ce5bb5802099d7708c5d3b82a677284d66ac1a08dddc74b009cb79fb65a
 
     public function getDebugInfo()
     {
-        return array (  155 => 38,  150 => 35,  141 => 31,  132 => 27,  128 => 26,  123 => 24,  119 => 23,  115 => 22,  111 => 21,  108 => 20,  103 => 19,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  125 => 18,  115 => 14,  107 => 13,  102 => 12,  98 => 11,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -185,39 +154,19 @@ class __TwigTemplate_ce5bb5802099d7708c5d3b82a677284d66ac1a08dddc74b009cb79fb65a
 {% block title %}Learner index{% endblock %}
 
 {% block body %}
-    <h1>Learner index</h1>
-
-    <table class=\"table\">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>FirstName</th>
-                <th>LastName</th>
-                <th>Gender</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class=\"center-link\">
+        <a class=\"effect\" href=\"{{path('learner_new')}}\">Ajouter un apprenant</a>
+    </div>
+    <div class=\"vertical-space\"></div>
+    <div class=\"block\">
         {% for learner in learners %}
-            <tr>
-                <td>{{ learner.id }}</td>
-                <td>{{ learner.firstName }}</td>
-                <td>{{ learner.lastName }}</td>
-                <td>{{ learner.gender ? 'Yes' : 'No' }}</td>
-                <td>
-                    <a href=\"{{ path('learner_show', {'id': learner.id}) }}\">show</a>
-                    <a href=\"{{ path('learner_edit', {'id': learner.id}) }}\">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan=\"5\">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <a href=\"{{ path('learner_new') }}\">Create new</a>
+        <a href=\"{{path('learner_show',{'id' : learner.id})}}\">
+            <div class=\"show_elements\" {% if learner.gender %}id=\"boy\"{% else %}id=\"girl\"{% endif %}>
+                <div class=\"element\">{{learner.firstname}}</div>
+            </div>
+        </a>
+            {% endfor %}
+    </div>
 {% endblock %}
 ", "learner/index.html.twig", "C:\\Users\\devwe\\OneDrive\\Documents\\LocalServer\\HomeSchooling\\templates\\learner\\index.html.twig");
     }

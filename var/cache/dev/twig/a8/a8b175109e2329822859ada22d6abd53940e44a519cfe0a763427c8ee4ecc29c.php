@@ -54,9 +54,8 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         // line 6
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-        <link rel=\"stylesheet\" href=\"../css/style.css\">
         ";
-        // line 8
+        // line 7
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 10
         echo "    </head>
@@ -79,8 +78,7 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         $this->displayBlock('javascripts', $context, $blocks);
         // line 22
         echo "    </body>
-</html>
-";
+</html>";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
 
@@ -108,7 +106,7 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
 
     }
 
-    // line 8
+    // line 7
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -118,8 +116,11 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 9
-        echo "        ";
+        // line 8
+        echo "        <link rel=\"stylesheet\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../css/style.css"), "html", null, true);
+        echo " \">
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -181,7 +182,9 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 20
-        echo "        <script src=\"../js/script.js\"></script>    
+        echo "        <script src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("../js/script.js"), "html", null, true);
+        echo " \"></script>    
         ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -203,7 +206,7 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
 
     public function getDebugInfo()
     {
-        return array (  184 => 20,  174 => 19,  155 => 15,  145 => 16,  142 => 15,  132 => 14,  122 => 9,  112 => 8,  93 => 6,  81 => 22,  78 => 19,  76 => 18,  73 => 17,  71 => 14,  68 => 13,  66 => 12,  62 => 10,  60 => 8,  55 => 6,  48 => 1,);
+        return array (  185 => 20,  175 => 19,  156 => 15,  146 => 16,  143 => 15,  133 => 14,  120 => 8,  110 => 7,  91 => 6,  80 => 22,  77 => 19,  75 => 18,  72 => 17,  70 => 14,  67 => 13,  65 => 12,  61 => 10,  59 => 7,  55 => 6,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -214,8 +217,8 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         <meta charset=\"UTF-8\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <title>{% block title %}HomeSchooling{% endblock %}</title>
-        <link rel=\"stylesheet\" href=\"../css/style.css\">
         {% block stylesheets %}
+        <link rel=\"stylesheet\" href=\"{{asset('../css/style.css')}} \">
         {% endblock %}
     </head>
     <body>
@@ -227,10 +230,9 @@ class __TwigTemplate_504eacf37614a638d94dbbc14b49ae0381724cb50976c2ce6ff5a09e036
         </div>
         {% include \"footer.html.twig\" %}
         {% block javascripts %}
-        <script src=\"../js/script.js\"></script>    
+        <script src=\"{{asset('../js/script.js')}} \"></script>    
         {% endblock %}
     </body>
-</html>
-", "base.html.twig", "C:\\Users\\devwe\\OneDrive\\Documents\\LocalServer\\HomeSchooling\\templates\\base.html.twig");
+</html>", "base.html.twig", "C:\\Users\\devwe\\OneDrive\\Documents\\LocalServer\\HomeSchooling\\templates\\base.html.twig");
     }
 }

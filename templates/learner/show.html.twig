@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{{learner.firstname}}{% endblock %}
+
+{% block body %}
+<div class="center-link">
+    <a href="{{ path('learner_edit', {'id': learner.id}) }}">Modifier</a>
+</div>
+<div class="block">
+    <div class="show_one_element" {% if learner.gender %}id="boy"{% else %}id="girl"{% endif %}>
+        <div class="element">{{learner.firstname}}</div>
+        <div class="element">{{learner.lastName}}</div>
+        <div class="element">{% if learner.gender %}Garçon{% else %}Fille{% endif %}</div>
+        <div class="element">{{learner.level.grade}} | {{learner.level.schoolClass}}</div>
+        {% for teacher in learner.teacher %}
+            <div class="element teacher">{{teacher.lastName}}</div>
+        {% endfor %}
+    </div>
+</div>
+<div class="center-link">
+    <a class="effect" href="{{path('learner_index')}}">Liste des apprenants</a>
+</div>
+{% endblock %}

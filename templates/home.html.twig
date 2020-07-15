@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <a class="effect" href="{{path('learner_index')}}">Les apprenants</a>
+    </div>
+    <div class="container">
+        <a class="effect" href="{{path('teacher_index')}}">Les enseignants</a>
+    </div>
+    <div class="container">
+        <a class="effect" href="{{path('level_index')}}">Les niveaux scolaires</a>
+    </div>
+{% endblock %}

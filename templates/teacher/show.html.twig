@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Teacher{% endblock %}
+
+{% block body %}
+    <h1>Teacher</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Prénom</th>
+                <td>{{ teacher.firstName }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ teacher.lastName }}</td>
+            </tr>
+            <tr>
+                <th>Pseudo</th>
+                <td>{{ teacher.pseudo }}</td>
+            </tr>
+            <tr>
+                <th>Mail</th>
+                <td>{{ teacher.mail }}</td>
+            </tr>
+            <tr>
+                <th>Genre</th>
+                <td>{% if teacher.gender %}Homme{% else %}Femme{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Apprennants</th>
+                <td>
+                    {% for learner in teacher.learners %}
+                        <p>
+                            <span>{{learner.firstName}}</span>
+                        </p>
+                    {% endfor %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('teacher_index') }}">revenir à la liste des enseignants</a>
+
+    <a href="{{ path('teacher_edit', {'id': teacher.id}) }}">Modifier</a>
+
+    {{ include('teacher/_delete_form.html.twig') }}
+{% endblock %}

@@ -37,6 +37,7 @@ class Level
     public function __construct()
     {
         $this->learners = new ArrayCollection();
+        $this->matters = new ArrayCollection();
     }
 
     public function __toString(): string

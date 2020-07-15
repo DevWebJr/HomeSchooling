@@ -48,7 +48,7 @@ class __TwigTemplate_3186d521fd57ae43939df90bef9ac741ee4a0fe20f3fe3c4711a6b5e248
         // line 3
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . twig_get_attribute($this->env, $this->source, (isset($context["learner"]) || array_key_exists("learner", $context) ? $context["learner"] : (function () { throw new RuntimeError('Variable "learner" does not exist.', 3, $this->source); })()), "id", [], "any", false, false, false, 3))), "html", null, true);
         echo "\">
-    <button class=\"btn\">Delete</button>
+    <button class=\"delete-button\">Supprimer</button>
 </form>
 ";
         
@@ -79,7 +79,7 @@ class __TwigTemplate_3186d521fd57ae43939df90bef9ac741ee4a0fe20f3fe3c4711a6b5e248
         return new Source("<form method=\"post\" action=\"{{ path('learner_delete', {'id': learner.id}) }}\" onsubmit=\"return confirm('Are you sure you want to delete this item?');\">
     <input type=\"hidden\" name=\"_method\" value=\"DELETE\">
     <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ learner.id) }}\">
-    <button class=\"btn\">Delete</button>
+    <button class=\"delete-button\">Supprimer</button>
 </form>
 ", "learner/_delete_form.html.twig", "C:\\Users\\devwe\\OneDrive\\Documents\\LocalServer\\HomeSchooling\\templates\\learner\\_delete_form.html.twig");
     }

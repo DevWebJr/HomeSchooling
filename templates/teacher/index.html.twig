@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des enseignants{% endblock %}
+
+{% block body %}
+    <h1>Liste des enseignants</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Pseudo</th>
+                <th>Mail</th>
+                <th>Genre</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for teacher in teachers %}
+            <tr>
+                <td>{% if teacher.gender %}Mr{% else %}Mme{% endif %}</td>
+                <!-- <td>{{ teacher.id }}</td> -->
+                <td>{{ teacher.firstName }}</td>
+                <td>{{ teacher.lastName }}</td>
+                <td>{{ teacher.pseudo }}</td>
+                <td>{{ teacher.mail }}</td>
+                <td>{% if teacher.gender %}(Homme){% else %}(Femme){% endif %}</td>
+                <td>
+                    <a href="{{ path('teacher_show', {'id': teacher.id}) }}">show</a>
+                    <a href="{{ path('teacher_edit', {'id': teacher.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">aucun enregistrement</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('teacher_new') }}">Ajouter un enseignant</a>
+{% endblock %}

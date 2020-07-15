@@ -1,0 +1,8 @@
+{{ form_start(form, {'attr': {'class': 'form'}}) }}
+    {{ form_row(form.firstName, {'attr': {'class': 'champ'}}) }}
+    {{ form_row(form.lastName, {'attr': {'class': 'champ'}}) }}
+    {{ form_row(form.gender, {'attr': {'class': 'champ'}}) }}
+    {{ form_row(form.level, {'attr': {'class': 'champ'}}) }}
+    {{ form_row(form.teacher, {'attr': {'class': 'champ'}}) }}
+    <button class="bouton">{{ button_label|default('Valider') }}</button>
+{{ form_end(form) }}

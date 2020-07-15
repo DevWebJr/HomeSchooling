@@ -2,15 +2,33 @@
 
 namespace App\DataFixtures;
 
-use App\Entity\Learner;
 use App\Entity\Level;
+use App\Entity\Learner;
+use App\Entity\Teacher;
+use Doctrine\Persistence\ObjectManager;
 use Doctrine\Bundle\FixturesBundle\Fixture;
-use Doctrine\Common\Persistence\ObjectManager;
 
 class AppFixtures extends Fixture
 {
     public function load(ObjectManager $manager)
     {
+        /* Teacher */
+        $teacher_01 = new Teacher();
+        $teacher_01->setFirstName('Zeyneb');
+        $teacher_01->setLastName('Oummou Shemsedine');
+        $teacher_01->setPseudo('lio');
+        $teacher_01->setMail('oummou.shemsedine@gmail.com');
+        $teacher_01->setGender(false);
+        $manager->persist($teacher_01);
+
+        $teacher_02 = new Teacher();
+        $teacher_02->setFirstName('Abd Ar-Rahman');
+        $teacher_02->setLastName('Abou Shemsedine');
+        $teacher_02->setPseudo('tito');
+        $teacher_02->setMail('devwebjr@gmail.com');
+        $teacher_02->setGender(true);
+        $manager->persist($teacher_02);
+
         /* Level */
         $level_01 = new Level();
         $level_01->setGrade('Maternelle');

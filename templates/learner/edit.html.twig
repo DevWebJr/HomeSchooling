@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Un Apprenant{% endblock %}
+
+{% block body %}
+    <h1>Modifier</h1>
+
+    {{ include('learner/_form.html.twig', {'button_label': 'Modifier'}) }}
+
+    <div class="vertical-space"></div>
+    <div class="center-link">
+        <a class="effect" href="{{path('learner_index')}}">Liste des apprenants</a>
+    </div>
+    <div class="vertical-space"></div>
+
+    {{ include('learner/_delete_form.html.twig') }}
+{% endblock %}

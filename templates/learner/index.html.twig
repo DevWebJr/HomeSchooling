@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Learner index{% endblock %}
+
+{% block body %}
+    <div class="center-link">
+        <a class="effect" href="{{path('learner_new')}}">Ajouter un apprenant</a>
+    </div>
+    <div class="vertical-space"></div>
+    <div class="block">
+        {% for learner in learners %}
+        <a href="{{path('learner_show',{'id' : learner.id})}}">
+            <div class="show_elements" {% if learner.gender %}id="boy"{% else %}id="girl"{% endif %}>
+                <div class="element">{{learner.firstname}}</div>
+            </div>
+        </a>
+            {% endfor %}
+    </div>
+{% endblock %}
